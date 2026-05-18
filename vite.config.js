@@ -1,10 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-const githubPagesBase = process.env.GITHUB_PAGES === 'true' ? '/MedAgentLab/' : '/'
+const siteBase = process.env.SITE_BASE || '/'
 
 export default defineConfig({
-  base: githubPagesBase,
+  base: siteBase,
   plugins: [react()],
   server: {
     host: '0.0.0.0',

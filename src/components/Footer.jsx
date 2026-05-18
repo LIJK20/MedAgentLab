@@ -1,9 +1,5 @@
-/**
- * Footer — colophon strip.
- * Editorial pages always end with a colophon. We use it instead of the usual
- * generic "© 2026" centered line: monospace metadata, three vertical columns,
- * a deliberate horizontal rule, no social icon soup.
- */
+import { Link } from 'react-router-dom'
+
 export default function Footer() {
   return (
     <footer className="border-t border-ink/15 bg-paper">
@@ -17,8 +13,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="mt-5 max-w-md text-sm leading-relaxed text-mute">
-              医疗人工智能与智能体实验室 ·
-              兰州大学信息科学与工程学院 ·
+              医疗人工智能与智能体实验室 · 兰州大学信息科学与工程学院 ·
               Medical Artificial Intelligence & Agent Laboratory.
             </p>
           </div>
@@ -35,11 +30,9 @@ export default function Footer() {
             <li className="text-sm text-mute">榆中校区 · 致远楼 421</li>
             <li className="text-sm text-mute">730107 · 甘肃 · 中国</li>
           </FooterCol>
-
         </div>
 
-        <div className="mt-14 flex flex-col items-start justify-between gap-3 border-t border-ink/10 pt-6 md:flex-row md:items-center">
-        </div>
+        <div className="mt-14 flex flex-col items-start justify-between gap-3 border-t border-ink/10 pt-6 md:flex-row md:items-center" />
       </div>
     </footer>
   )
@@ -57,12 +50,12 @@ function FooterCol({ title, children }) {
 function FooterLink({ href, children }) {
   return (
     <li>
-      <a
-        href={href}
+      <Link
+        to={href.startsWith('#') ? `/home${href}` : href}
         className="text-sm text-ink/85 underline-offset-4 transition-colors hover:text-ink hover:underline"
       >
         {children}
-      </a>
+      </Link>
     </li>
   )
 }

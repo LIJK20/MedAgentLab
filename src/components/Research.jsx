@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import SectionHeader from './SectionHeader.jsx'
 import { publications, awards } from '../data/research.js'
+import { withBasePath } from '../utils/paths.js'
 
 const TABS = [
   { id: 'pubs', label: '论文发表', sub: 'Publications' },
@@ -81,6 +82,8 @@ function PubRow({ p, index }) {
 }
 
 function AwardRow({ a, index }) {
+  const certificateUrl = withBasePath(a.certificate)
+
   return (
     <motion.li
       initial={{ opacity: 0, y: 16 }}
@@ -107,13 +110,13 @@ function AwardRow({ a, index }) {
       <div className="col-span-12 md:col-span-3">
         {a.certificate && (
           <a
-            href={a.certificate}
+            href={certificateUrl}
             target="_blank"
             rel="noreferrer noopener"
             className="group/cert block border border-ink/15 bg-white p-2 transition-colors hover:border-ink"
           >
             <img
-              src={a.certificate}
+              src={certificateUrl}
               alt={`${a.title}获奖证书`}
               loading="lazy"
               className="h-36 w-full object-contain grayscale-[18%] transition duration-500 group-hover/cert:grayscale-0 md:h-44"

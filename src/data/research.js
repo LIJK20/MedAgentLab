@@ -305,6 +305,14 @@ export const publications = [
 
 export const awards = [
   {
+    id: 'craic-2026-gansu-ai-innovation',
+    title: '第28届中国机器人及人工智能大赛人工智能创新赛赛项甘肃省省赛',
+    placement: '一等奖',
+    year: 2026,
+    org: '第28届中国机器人及人工智能大赛',
+    certificate: '/Awards/2026CRAIC人工智能创新赛甘肃省省赛一等奖.png',
+  },
+  {
     id: 'isbi-2026-ultrasound',
     title: 'IEEE ISBI 2026 超声影像分析基础模型设计挑战赛',
     placement: '第四名',

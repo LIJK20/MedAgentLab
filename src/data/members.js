@@ -285,6 +285,15 @@ export const members = [
     college: '信息科学与工程学院',
   },
   {
+    name: '刘洋',
+    degree: 'master',
+    degreeLabel: '硕士生',
+    grade: '2025级',
+    research: '神经信号编解码',
+    institution: '兰州大学',
+    college: '信息科学与工程学院',
+  },
+  {
     name: '钱方济',
     degree: 'phd',
     degreeLabel: '博士生',

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { withBasePath } from '../utils/paths.js'
 
 /**
  * Director card — editorial portrait.
@@ -29,7 +30,7 @@ export default function DirectorCard({ d, index }) {
       >
         {d.photo ? (
           <img
-            src={d.photo}
+            src={withBasePath(d.photo)}
             alt={`${d.name}导师照片`}
             className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-[1.035]"
             loading="lazy"

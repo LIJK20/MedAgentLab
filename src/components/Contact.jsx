@@ -12,6 +12,9 @@ const MAJORS = [
   '统计 / 数据科学',
 ]
 
+const WEB3FORMS_ENDPOINT = 'https://api.web3forms.com/submit'
+const WEB3FORMS_ACCESS_KEY = '80b8cb4e-122b-4b91-b449-2d78c5037bf9'
+
 /**
  * Contact — inverted block.
  *
@@ -24,18 +27,58 @@ const MAJORS = [
  */
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', major: '', msg: '' })
-  const [submitted, setSubmitted] = useState(false)
+  const [submitState, setSubmitState] = useState('idle')
 
   function update(k) {
     return (e) => setForm((f) => ({ ...f, [k]: e.target.value }))
   }
 
-  function submit(e) {
+  async function submit(e) {
     e.preventDefault()
-    // Client-only mock — wire to a real endpoint later.
-    setSubmitted(true)
-    setTimeout(() => setSubmitted(false), 4200)
+    setSubmitState('sending')
+
+    const payload = {
+      access_key: WEB3FORMS_ACCESS_KEY,
+      subject: 'MedAgentLab 招生申请',
+      from_name: form.name,
+      name: form.name,
+      email: form.email,
+      major: form.major || '未填写',
+      message: form.msg || '未填写',
+    }
+
+    try {
+      const response = await fetch(WEB3FORMS_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify(payload),
+      })
+      const result = await response.json()
+
+      if (!response.ok || result.success === false) {
+        throw new Error(result.message || 'Form submission failed')
+      }
+
+      setForm({ name: '', email: '', major: '', msg: '' })
+      setSubmitState('success')
+      setTimeout(() => setSubmitState('idle'), 4200)
+    } catch (error) {
+      setSubmitState('error')
+      setTimeout(() => setSubmitState('idle'), 5200)
+    }
   }
+
+  const submitLabel =
+    submitState === 'sending'
+      ? '正在提交'
+      : submitState === 'success'
+      ? '提交成功 · 我们将尽快回复'
+      : submitState === 'error'
+      ? '提交失败 · 请直接邮件联系'
+      : '提交申请'
 
   return (
     <section
@@ -116,7 +159,7 @@ export default function Contact() {
               </ContactRow>
               <ContactRow icon={Mail} label="联系邮箱">
                 <a
-                  href="mailto:medagentlab@lzu.edu.cn"
+                  href="mailto:medagentlab@163.com"
                   className="underline-offset-4 hover:underline"
                 >
                   medagentlab@163.com
@@ -177,9 +220,10 @@ export default function Contact() {
 
             <button
               type="submit"
+              disabled={submitState === 'sending'}
               className="group mt-2 inline-flex items-center justify-between border border-paper px-5 py-3.5 font-mono text-xs uppercase tracking-wider2 text-paper transition-colors hover:bg-paper hover:text-ink"
             >
-              <span>{submitted ? '提交成功 · 我们将尽快回复' : '提交申请'}</span>
+              <span>{submitLabel}</span>
               <ArrowUpRight
                 size={16}
                 className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"

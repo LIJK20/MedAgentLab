@@ -7,7 +7,6 @@ export const publications = [
     venue: 'Medical Image Analysis',
     year: 2024,
     tag: 'Published',
-    note: 'IF=13.8 · 中科院1区 · 人工智能与医学影像Top期刊',
   },
   {
     id: 'otfpf-information-fusion-2023',
@@ -16,7 +15,6 @@ export const publications = [
     venue: 'Information Fusion',
     year: 2023,
     tag: 'Published',
-    note: 'IF=18.6 · 中科院1区 · 人工智能Top期刊',
   },
   {
     id: 'aigan-media-2023',
@@ -26,72 +24,64 @@ export const publications = [
     venue: 'Medical Image Analysis',
     year: 2023,
     tag: 'Published',
-    note: 'IF=13.8 · 中科院1区 · 人工智能与医学影像Top期刊',
   },
   {
     id: 'fadfnet-media-2026',
     title:
       'FADFNet: A fine-tunable and adaptive decomposition-fusion network for cross-dataset low-dose CT and low-dose PET image reconstruction',
-    authors: ['Fangji Qian', 'Weitao Wang', 'Yanyan Huang', 'Meng Niu', 'Yuanxue Gao', 'Zihao Zhao', 'Kuangyu Shi', 'Lequan Yu', 'Yu Fu*', 'Cheng Zhuo'],
+    authors: ['Fangji Qian', 'Weitao Wang', 'Yanyan Huang', 'Meng Niu', 'Yuanxue Gao', 'Zihao Zhao', 'Kuangyu Shi', 'Lequan Yu', 'Yu Fu', 'Cheng Zhuo'],
     venue: 'Medical Image Analysis',
     year: 2026,
     tag: 'Published',
-    note: 'IF=11.8 · 中科院1区 · 人工智能与医学影像Top期刊',
   },
   {
     id: 'uniultra-isbi-2026',
     title: 'UniUltra: A Unified Foundation Model for Universal Ultrasound Analysis',
-    authors: ['Zi Yang', 'Zengxing Li', 'Qingchen Liu', 'Kun Wang', 'Yu Fu*'],
+    authors: ['Zi Yang', 'Zengxing Li', 'Qingchen Liu', 'Kun Wang', 'Yu Fu'],
     venue: 'IEEE ISBI',
     year: 2026,
     tag: 'Published',
-    note: '医学影像领域EI会议 · 唯一通讯作者',
   },
   {
     id: 'retrieve-kdd-2026',
     title: 'Road-Constrained Vehicle Trajectory Recovery from Traffic Video Using Spatio-Temporal Voxel Representation',
-    authors: ['Taihang Dong', 'Jun Zhang', 'Ping Chen', 'Rongkai Wang', 'Yu Fu*', 'Dingyu Yang'],
+    authors: ['Taihang Dong', 'Jun Zhang', 'Ping Chen', 'Rongkai Wang', 'Yu Fu', 'Dingyu Yang'],
     venue: 'ACM SIGKDD',
     year: 2026,
     tag: 'Published',
-    note: '数据挖掘领域CCF A类会议 · 唯一通讯作者',
   },
   {
     id: 'pediatric-total-body-pet-ejnmmi-2024',
     title: 'Intelligent Ultrafast Total-body PET for Sedation-free Pediatric 18F-FDG Imaging',
-    authors: ['Xiang Zhou#', 'Yu Fu#', 'Shunjie Dong', 'Lianghua Li', 'Song Xue', 'Ruohua Chen', 'Yumei Chen', 'Jianjun Liu', 'Kuangyu Shi'],
+    authors: ['Xiang Zhou', 'Yu Fu', 'Shunjie Dong', 'Lianghua Li', 'Song Xue', 'Ruohua Chen', 'Yumei Chen', 'Jianjun Liu', 'Kuangyu Shi'],
     venue: 'European Journal of Nuclear Medicine and Molecular Imaging',
     year: 2024,
     tag: 'Published',
-    note: '共同一作 · IF=10.1 · 中科院1区 · 医学影像与核医学Top期刊',
   },
   {
     id: 'brain-age-smri-fdg-ejnmmi-2024',
     title: 'Accurate Brain Age Prediction Based on Structural MRI and 18F-FDG PET Imaging',
-    authors: ['Le Xue#', 'Yu Fu#', 'Gang Feng', 'Xin Gao', 'Lanlan Li', 'Cheng Zhuo', 'Hong Zhang', 'Mei Tian', 'Alzheimer’s Disease Neuroimaging Initiative'],
+    authors: ['Le Xue', 'Yu Fu', 'Gang Feng', 'Xin Gao', 'Lanlan Li', 'Cheng Zhuo', 'Hong Zhang', 'Mei Tian', 'Alzheimer’s Disease Neuroimaging Initiative'],
     venue: 'European Journal of Nuclear Medicine and Molecular Imaging',
     year: 2024,
     tag: 'Published',
-    note: '共同一作 · IF=10.1 · 中科院1区 · 医学影像与核医学Top期刊',
   },
   {
     id: 'text-guided-reconstruction-miccai-2025',
     title:
       'Towards Multi-Scenario Generalization: Text-Guided Unified Framework for Low-Dose CT and Total-Body PET Reconstruction',
-    authors: ['Weitao Wang', 'Yanyan Huang', 'Shunjie Dong', 'Le Xue', 'Kuangyu Shi', 'Yu Fu*'],
+    authors: ['Weitao Wang', 'Yanyan Huang', 'Shunjie Dong', 'Le Xue', 'Kuangyu Shi', 'Yu Fu'],
     venue: 'MICCAI',
     year: 2025,
     tag: 'Published',
-    note: '医学人工智能领域EI会议 · 通讯作者 · Early Accept · Top 9%',
   },
   {
     id: 'fa2net-prcv-2025',
     title: 'FA2-Net: A Frequency-Aware Asymmetric Dual-Stage Network for Unpaired Cross-Sequence MRI Synthesis',
-    authors: ['Zhihao Zhao', 'Yu Fu*'],
+    authors: ['Zhihao Zhao', 'Yu Fu'],
     venue: 'PRCV',
     year: 2025,
     tag: 'Published',
-    note: '模式识别与计算机视觉领域EI会议 · 通讯作者 · Oral · Top 3%',
   },
   {
     id: 'nonlinear-granger-schizophrenia-jne-2022',
@@ -101,7 +91,6 @@ export const publications = [
     venue: 'Journal of Neural Engineering',
     year: 2022,
     tag: 'Published',
-    note: 'IF=5.4 · 中科院2区',
   },
   {
     id: 'sex-dependent-brain-aging-pnpbp-2024',
@@ -110,7 +99,6 @@ export const publications = [
     venue: 'Progress in Neuro-Psychopharmacology and Biological Psychiatry',
     year: 2024,
     tag: 'Published',
-    note: 'IF=5.3 · 中科院2区',
   },
   {
     id: 'asd-subcortical-pipeline-pnpbp-2021',
@@ -120,25 +108,22 @@ export const publications = [
     venue: 'Progress in Neuro-Psychopharmacology and Biological Psychiatry',
     year: 2021,
     tag: 'Published',
-    note: 'IF=5.2 · 中科院2区',
   },
   {
     id: 'fpga-lstm-neurocomputing-2025',
     title: 'FPGA-Based Component-Wise LSTM Training Accelerator for Neural Granger Causality Analysis',
-    authors: ['Chuliang Guo', 'Yufei Chen', 'Yu Fu*'],
+    authors: ['Chuliang Guo', 'Yufei Chen', 'Yu Fu'],
     venue: 'Neurocomputing',
     year: 2025,
     tag: 'Published',
-    note: 'IF=5.2 · 中科院2区 · 人工智能Top期刊 · 通讯作者',
   },
   {
     id: 'rich-club-psychiatry-2023',
     title: 'Abnormal temporal variability of rich-club organization in three major psychiatric conditions',
-    authors: ['Meng Niu', 'Hanning Guo', 'Zhe Zhang', 'Yu Fu*'],
+    authors: ['Meng Niu', 'Hanning Guo', 'Zhe Zhang', 'Yu Fu'],
     venue: 'Frontiers in Psychiatry',
     year: 2023,
     tag: 'Published',
-    note: 'IF=5.5 · 中科院3区 · 通讯作者 · 邀稿',
   },
   {
     id: 'sfcnext-isbi-2023',
@@ -147,7 +132,6 @@ export const publications = [
     venue: 'IEEE ISBI',
     year: 2023,
     tag: 'Published',
-    note: '医学影像领域EI会议',
   },
   {
     id: 'resource-efficient-pet-isbi-2022',
@@ -156,7 +140,6 @@ export const publications = [
     venue: 'IEEE ISBI',
     year: 2022,
     tag: 'Published',
-    note: '医学影像领域EI会议',
   },
   {
     id: 'active-index-isbi-2022',
@@ -165,7 +148,6 @@ export const publications = [
     venue: 'IEEE ISBI',
     year: 2022,
     tag: 'Published',
-    note: '医学影像领域EI会议',
   },
   {
     id: 'amyloid-pet-generation-bibm-2021',
@@ -174,16 +156,14 @@ export const publications = [
     venue: 'IEEE BIBM',
     year: 2021,
     tag: 'Published',
-    note: '医学影像领域EI会议',
   },
   {
     id: 'parkinson-hippocampus-bibm-2023',
     title: "Surface-based morphometric changes of the hippocampus at global and subfield levels of early-stage Parkinson's disease",
-    authors: ['Meng Niu', 'Junqiang Lei', 'Yu Fu*'],
+    authors: ['Meng Niu', 'Junqiang Lei', 'Yu Fu'],
     venue: 'IEEE BIBM',
     year: 2023,
     tag: 'Published',
-    note: '医学影像领域EI会议 · 通讯作者',
   },
   {
     id: 'partial-unbalanced-feature-transport-tmi-2023',
@@ -192,7 +172,6 @@ export const publications = [
     venue: 'IEEE Transactions on Medical Imaging',
     year: 2023,
     tag: 'Published',
-    note: 'IF=11.0 · 中科院1区 · 人工智能与医学影像Top期刊',
   },
   {
     id: 'rconet-tnnls-2021',
@@ -202,7 +181,6 @@ export const publications = [
     venue: 'IEEE Transactions on Neural Networks and Learning Systems',
     year: 2021,
     tag: 'Published',
-    note: 'IF=14.4 · 中科院1区 · 人工智能领域Top期刊',
   },
   {
     id: 'deunet-2-media-2022',
@@ -211,7 +189,6 @@ export const publications = [
     venue: 'Medical Image Analysis',
     year: 2022,
     tag: 'Published',
-    note: 'IF=13.8 · 中科院1区 · 人工智能与医学影像Top期刊',
   },
   {
     id: 'conslide-iccv-2023',
@@ -221,7 +198,6 @@ export const publications = [
     venue: 'ICCV',
     year: 2023,
     tag: 'Published',
-    note: 'CV领域EI会议',
   },
   {
     id: 'pathology-foundation-model-neurips-2024',
@@ -231,7 +207,6 @@ export const publications = [
     venue: 'NeurIPS',
     year: 2024,
     tag: 'Published',
-    note: '机器学习领域EI会议',
   },
   {
     id: 'xaiguiformer-iclr-2025',
@@ -240,7 +215,6 @@ export const publications = [
     venue: 'ICLR',
     year: 2025,
     tag: 'Published',
-    note: '机器学习领域EI会议',
   },
   {
     id: 'state-space-wsi-tmi-2024',
@@ -250,7 +224,6 @@ export const publications = [
     venue: 'IEEE Transactions on Medical Imaging',
     year: 2024,
     tag: 'Published',
-    note: 'IF=11.0 · 中科院1区 · 人工智能与医学影像Top期刊',
   },
   {
     id: 'mdd-hippocampus-amygdala-bib-2020',
@@ -260,7 +233,6 @@ export const publications = [
     venue: 'Brain Imaging and Behavior',
     year: 2020,
     tag: 'Published',
-    note: 'IF=3.9 · 中科院2区 · 硕士导师一作 · Google Scholar 被引89次',
   },
   {
     id: 'apoe-clu-ad-jad-2021',
@@ -270,7 +242,6 @@ export const publications = [
     venue: "Journal of Alzheimer's Disease",
     year: 2021,
     tag: 'Published',
-    note: 'IF=4.2 · 中科院2区',
   },
   {
     id: 'mci-hippocampus-jad-2022',
@@ -280,7 +251,6 @@ export const publications = [
     venue: "Journal of Alzheimer's Disease",
     year: 2022,
     tag: 'Published',
-    note: 'IF=4.2 · 中科院2区',
   },
   {
     id: 'cannabis-subcortical-dad-2022',
@@ -290,7 +260,6 @@ export const publications = [
     venue: 'Drug and Alcohol Dependence',
     year: 2022,
     tag: 'Published',
-    note: 'IF=4.9 · 中科院2区',
   },
   {
     id: 'asr-distillation-icassp-2023',
@@ -300,7 +269,6 @@ export const publications = [
     venue: 'IEEE ICASSP',
     year: 2023,
     tag: 'Published',
-    note: '语音领域EI会议',
   },
   {
     id: 'eyelid-malignancy-lancet-ssrn',

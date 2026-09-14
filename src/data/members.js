@@ -129,7 +129,7 @@ export const members = [
     grade: '2025级',
     research: 'SAM多模态医学影像分割',
     institution: '兰州大学',
-    college: '人工智能学院',
+    college: '数学与统计学院',
   },
   {
     name: '严文浩',
@@ -137,6 +137,15 @@ export const members = [
     degreeLabel: '硕士生',
     grade: '2025级',
     research: '复杂脑网络分析',
+    institution: '兰州大学',
+    college: '数学与统计学院',
+  },
+  {
+    name: '董肖',
+    degree: 'master',
+    degreeLabel: '硕士生',
+    grade: '2024级',
+    research: '低剂量 PET/CT 重建',
     institution: '兰州大学',
     college: '人工智能学院',
   },
@@ -222,22 +231,13 @@ export const members = [
     college: '人工智能学院',
   },
   {
-    name: '董肖',
-    degree: 'master',
-    degreeLabel: '硕士生',
-    grade: '2024级',
-    research: '低剂量 PET/CT 重建',
-    institution: '兰州大学',
-    college: '人工智能学院',
-  },
-  {
     name: '成雨欣',
     degree: 'master',
     degreeLabel: '硕士生',
     grade: '2024级',
     research: '复杂脑网络分析',
     institution: '兰州大学',
-    college: '人工智能学院',
+    college: '数学与统计学院',
   },
   {
     name: '张宏阁',
@@ -246,7 +246,7 @@ export const members = [
     grade: '2024级',
     research: '复杂脑网络分析',
     institution: '兰州大学',
-    college: '人工智能学院',
+    college: '数学与统计学院',
   },
   {
     name: '奚健朝',
@@ -369,7 +369,7 @@ export const members = [
     grade: '2026级',
     research: '工业级机器视觉及具身智能方向',
     institution: '兰州大学',
-    college: '人工智能学院',
+    college: '数学与统计学院',
   },
   {
     name: '王浩励',
@@ -378,7 +378,7 @@ export const members = [
     grade: '2026级',
     research: '脑机编解码',
     institution: '兰州大学',
-    college: '人工智能学院',
+    college: '数学与统计学院',
   },
   {
     name: '杨若曦',
@@ -387,7 +387,7 @@ export const members = [
     grade: '2026级',
     research: '脑机编解码',
     institution: '兰州大学',
-    college: '人工智能学院',
+    college: '数学与统计学院',
   },
   {
     name: '范子怡',
@@ -396,6 +396,6 @@ export const members = [
     grade: '2026级',
     research: '低剂量 PET/CT 重建',
     institution: '兰州大学',
-    college: '人工智能学院',
+    college: '数学与统计学院',
   },
 ]

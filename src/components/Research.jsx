@@ -67,14 +67,14 @@ function PubRow({ p, index }) {
         >
           {TAG_LABEL[p.tag] || p.tag}
         </span>
-        {(p.doi || p.scholarUrl) && (
+        {(p.doi || p.scholarUrl || p.scholarSearchUrl) && (
           <a
-            href={p.doi ? `https://doi.org/${p.doi}` : p.scholarUrl}
+            href={p.doi ? `https://doi.org/${p.doi}` : (p.scholarUrl || p.scholarSearchUrl)}
             target="_blank"
             rel="noreferrer noopener"
             className={`${META_CLASS} underline-offset-4 hover:underline`}
           >
-            {p.doi ? 'DOI ↗' : 'Scholar ↗'}
+            {p.doi ? 'DOI ↗' : p.scholarUrl ? 'Scholar ↗' : 'Scholar 检索 ↗'}
           </a>
         )}
       </div>
@@ -100,12 +100,6 @@ function AwardRow({ a, index }) {
       <div className="col-span-12 md:col-span-5">
         <h3 className="text-xl font-normal text-ink md:text-2xl">{a.title}</h3>
         <div className={`mt-2 ${META_CLASS}`}>主办方 · {a.org}</div>
-        {a.team && (
-          <div className={`mt-2 ${META_CLASS}`}>团队成员 · {a.team.join('、')}</div>
-        )}
-        {a.advisors && (
-          <div className={`mt-2 ${META_CLASS}`}>指导老师 · {a.advisors.join('、')}</div>
-        )}
       </div>
       <div className={`col-span-6 md:col-span-2 ${META_DARK_CLASS}`}>
         {a.year}

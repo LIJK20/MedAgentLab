@@ -112,3 +112,17 @@ Nature Communications 与 npj Digital Medicine 两篇已重新核对出版社页
 - The influence of cerebrospinal fluid abnormalities and ApoE 4 on PHF-tau protein: Evidence from voxel analysis and graph theory（2019，Published）：https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=PfmSvNMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=PfmSvNMAAAAJ:2osOgNQ5qMEC
 - Structural alterations of the brain preceded functional alterations in major depressive disorder patients: Evidence from multimodal connectivity（2019，Published）：https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=PfmSvNMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=PfmSvNMAAAAJ:d1gkVwhDpl0C
 - Brain network alterations in individuals with and without mild cognitive impairment: parallel independent component analysis of AV1451 and AV45 positron emission tomography（2019，Published）：https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=PfmSvNMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=PfmSvNMAAAAJ:9yKSN-GCB0IC
+
+
+## 补齐论文链接
+
+对 8 条缺失链接的记录补齐入口：FADFNet 和 OTFPF 使用出版社核验的 DOI；其余 5 篇已发表论文使用本次会话已读取的 Scholar 详情链接。NeuroAlign 暂无已核验 DOI 或 Scholar 详情页，提供明确标注的 Scholar 精确题名检索，不代表已被 Scholar 收录。
+
+- NeuroAlign: A Unified Plug-and-Play Enhancer for Visual and Linguistic Brain Decoding：scholarSearchUrl https://scholar.google.com/scholar?q=%22NeuroAlign%3A%20A%20Unified%20Plug-and-Play%20Enhancer%20for%20Visual%20and%20Linguistic%20Brain%20Decoding%22
+- FADFNet: A fine-tunable and adaptive decomposition-fusion network for cross-dataset low-dose CT and low-dose PET image reconstruction：doi 10.1016/j.media.2026.104016
+- Unleash the Power of State Space Model for Whole Slide Image with Local Aware Scanning and Importance Resampling：scholarUrl https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=PfmSvNMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=PfmSvNMAAAAJ:maZDTaKrznsC
+- OTFPF: Optimal Transport Based Feature Pyramid Fusion Network for Brain Age Estimation：doi 10.1016/j.inffus.2023.101931
+- AIGAN: Attention-encoding Integrated Generative Adversarial Network for the reconstruction of low-dose CT and low-dose PET images：scholarUrl https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=PfmSvNMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=PfmSvNMAAAAJ:qUcmZB5y_30C
+- Partial Unbalanced Feature Transport for Cross-Modality Cardiac Image Segmentation：scholarUrl https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=PfmSvNMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=PfmSvNMAAAAJ:IWHjjKOFINEC
+- DeU-Net 2.0: Enhanced Deformable U-Net for 3D Cardiac Cine MRI Segmentation：scholarUrl https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=PfmSvNMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=PfmSvNMAAAAJ:ULOm3_A8WrAC
+- RCoNet: Deformable Mutual Information Maximization and High-order Uncertainty-aware Learning for Robust COVID-19 Detection：scholarUrl https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=PfmSvNMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=PfmSvNMAAAAJ:WF5omc3nYNoC

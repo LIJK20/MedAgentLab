@@ -77,6 +77,7 @@ export const publications = [
   },
   {
     id: 'neuroalign-miccai-2026',
+    scholarSearchUrl: 'https://scholar.google.com/scholar?q=%22NeuroAlign%3A%20A%20Unified%20Plug-and-Play%20Enhancer%20for%20Visual%20and%20Linguistic%20Brain%20Decoding%22',
     title: 'NeuroAlign: A Unified Plug-and-Play Enhancer for Visual and Linguistic Brain Decoding',
     authors: ['Jinke Li', 'Yanyan Huang', 'Le Xue', 'Yichi Zhang', 'Yuchen Liu', 'Weihao Zheng', 'Lequan Yu', 'Zhijun Yao', 'Yu Fu'],
     venue: 'MICCAI',
@@ -121,6 +122,7 @@ export const publications = [
   },
   {
     id: 'otfpf-information-fusion-2023',
+    doi: '10.1016/j.inffus.2023.101931',
     title: 'OTFPF: Optimal Transport Based Feature Pyramid Fusion Network for Brain Age Estimation',
     authors: ['Yu Fu', 'Yanyan Huang', 'Zhe Zhang', 'Shunjie Dong', 'Le Xue', 'Meng Niu', 'Yunxin Li', 'Zhiguo Shi', 'Yalin Wang', 'Hong Zhang', 'Mei Tian', 'Cheng Zhuo'],
     venue: 'Information Fusion',
@@ -129,6 +131,7 @@ export const publications = [
   },
   {
     id: 'aigan-media-2023',
+    scholarUrl: 'https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=PfmSvNMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=PfmSvNMAAAAJ:qUcmZB5y_30C',
     title:
       'AIGAN: Attention-encoding Integrated Generative Adversarial Network for the reconstruction of low-dose CT and low-dose PET images',
     authors: ['Yu Fu', 'Shunjie Dong', 'Meng Niu', 'Le Xue', 'Hanning Guo', 'Yanyan Huang', 'Yuanfan Xu', 'Kuangyu Shi', 'Qianqian Yang', 'Yiyu Shi', 'Hong Zhang', 'Mei Tian', 'Cheng Zhuo'],
@@ -138,6 +141,7 @@ export const publications = [
   },
   {
     id: 'fadfnet-media-2026',
+    doi: '10.1016/j.media.2026.104016',
     title:
       'FADFNet: A fine-tunable and adaptive decomposition-fusion network for cross-dataset low-dose CT and low-dose PET image reconstruction',
     authors: ['Fangji Qian', 'Weitao Wang', 'Yanyan Huang', 'Meng Niu', 'Yuanxue Gao', 'Zihao Zhao', 'Kuangyu Shi', 'Lequan Yu', 'Yu Fu', 'Cheng Zhuo'],
@@ -165,6 +169,7 @@ export const publications = [
   },
   {
     id: 'partial-unbalanced-feature-transport-tmi-2023',
+    scholarUrl: 'https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=PfmSvNMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=PfmSvNMAAAAJ:IWHjjKOFINEC',
     title: 'Partial Unbalanced Feature Transport for Cross-Modality Cardiac Image Segmentation',
     authors: ['Shunjie Dong', 'Zixuan Pan', 'Yu Fu', 'Dongwei Xu', 'Kuangyu Shi', 'Qianqian Yang', 'Yiyu Shi', 'Cheng Zhuo'],
     venue: 'IEEE Transactions on Medical Imaging',
@@ -173,6 +178,7 @@ export const publications = [
   },
   {
     id: 'rconet-tnnls-2021',
+    scholarUrl: 'https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=PfmSvNMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=PfmSvNMAAAAJ:WF5omc3nYNoC',
     title:
       'RCoNet: Deformable Mutual Information Maximization and High-order Uncertainty-aware Learning for Robust COVID-19 Detection',
     authors: ['Shunjie Dong', 'Qianqian Yang', 'Yu Fu', 'Mei Tian', 'Cheng Zhuo'],
@@ -182,6 +188,7 @@ export const publications = [
   },
   {
     id: 'deunet-2-media-2022',
+    scholarUrl: 'https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=PfmSvNMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=PfmSvNMAAAAJ:ULOm3_A8WrAC',
     title: 'DeU-Net 2.0: Enhanced Deformable U-Net for 3D Cardiac Cine MRI Segmentation',
     authors: ['Shunjie Dong', 'Zixuan Pan', 'Yu Fu', 'Qianqian Yang', 'Yuanxue Gao', 'Tianbai Yu', 'Yiyu Shi', 'Cheng Zhuo'],
     venue: 'Medical Image Analysis',
@@ -190,6 +197,7 @@ export const publications = [
   },
   {
     id: 'state-space-wsi-tmi-2024',
+    scholarUrl: 'https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=PfmSvNMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=PfmSvNMAAAAJ:maZDTaKrznsC',
     title:
       'Unleash the Power of State Space Model for Whole Slide Image with Local Aware Scanning and Importance Resampling',
     authors: ['Yanyan Huang', 'Weiqin Zhao', 'Yu Fu', 'Lingting Zhu', 'Lequan Yu'],

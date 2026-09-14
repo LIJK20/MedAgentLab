@@ -43,7 +43,7 @@ export default function Hero() {
           >
             <span className="signal-dot" aria-hidden />
             <span className="capsule uppercase">
-              兰州大学 · 信息科学与工程学院 · MedAgentLab
+              兰州大学 · 人工智能学院 · MedAgentLab
             </span>
           </motion.div>
 

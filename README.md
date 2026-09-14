@@ -6,7 +6,7 @@
 # MedAgentLab
 
 > *Medical Artificial Intelligence & Agent Laboratory*
-> 兰州大学 · 信息科学与工程学院 · 医疗人工智能与智能体实验室
+> 兰州大学 · 人工智能学院 · 医疗人工智能与智能体实验室
 > 聚焦医疗多模态大模型、普适性神经信号编解码与脑疾病诊断 —— 2026 招生进行中。
 
 实验室官网,采用单页 editorial 风格,面向中国大学生招生。

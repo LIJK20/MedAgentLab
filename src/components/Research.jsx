@@ -17,6 +17,7 @@ const META_DARK_CLASS = 'text-[11px] tracking-[0.04em] text-ink'
 // data field in canonical English (so it remains greppable in research.js).
 const TAG_LABEL = {
   Accepted: '已接收',
+  Unverified: '待核验',
   Published: '已发表',
   Preprint: '预印本',
   'In Submission': '投稿中',
@@ -66,14 +67,14 @@ function PubRow({ p, index }) {
         >
           {TAG_LABEL[p.tag] || p.tag}
         </span>
-        {p.doi && (
+        {(p.doi || p.scholarUrl) && (
           <a
-            href={`https://doi.org/${p.doi}`}
+            href={p.doi ? `https://doi.org/${p.doi}` : p.scholarUrl}
             target="_blank"
             rel="noreferrer noopener"
             className={`${META_CLASS} underline-offset-4 hover:underline`}
           >
-            DOI ↗
+            {p.doi ? 'DOI ↗' : 'Scholar ↗'}
           </a>
         )}
       </div>
@@ -83,6 +84,7 @@ function PubRow({ p, index }) {
 
 function AwardRow({ a, index }) {
   const certificateUrl = withBasePath(a.certificate)
+  const certificateLink = withBasePath(a.certificatePdf || a.certificate)
 
   return (
     <motion.li
@@ -98,6 +100,12 @@ function AwardRow({ a, index }) {
       <div className="col-span-12 md:col-span-5">
         <h3 className="text-xl font-normal text-ink md:text-2xl">{a.title}</h3>
         <div className={`mt-2 ${META_CLASS}`}>主办方 · {a.org}</div>
+        {a.team && (
+          <div className={`mt-2 ${META_CLASS}`}>团队成员 · {a.team.join('、')}</div>
+        )}
+        {a.advisors && (
+          <div className={`mt-2 ${META_CLASS}`}>指导老师 · {a.advisors.join('、')}</div>
+        )}
       </div>
       <div className={`col-span-6 md:col-span-2 ${META_DARK_CLASS}`}>
         {a.year}
@@ -110,7 +118,7 @@ function AwardRow({ a, index }) {
       <div className="col-span-12 md:col-span-3">
         {a.certificate && (
           <a
-            href={certificateUrl}
+            href={certificateLink}
             target="_blank"
             rel="noreferrer noopener"
             className="group/cert block border border-ink/15 bg-white p-2 transition-colors hover:border-ink"

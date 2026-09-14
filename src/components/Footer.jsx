@@ -13,7 +13,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="mt-5 max-w-md text-sm leading-relaxed text-mute">
-              医疗人工智能与智能体实验室 · 兰州大学信息科学与工程学院 ·
+              医疗人工智能与智能体实验室 · 兰州大学人工智能学院 ·
               Medical Artificial Intelligence & Agent Laboratory.
             </p>
           </div>
@@ -26,7 +26,7 @@ export default function Footer() {
           </FooterCol>
 
           <FooterCol title="所属机构">
-            <li className="text-sm text-ink/85">兰州大学 · 信息科学与工程学院</li>
+            <li className="text-sm text-ink/85">兰州大学 · 人工智能学院</li>
             <li className="text-sm text-mute">榆中校区 · 致远楼 421</li>
             <li className="text-sm text-mute">730107 · 甘肃 · 中国</li>
           </FooterCol>

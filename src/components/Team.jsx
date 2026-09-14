@@ -7,7 +7,13 @@ export default function Team() {
   const [active, setActive] = useState(studentGroups[0].id)
 
   const filtered = useMemo(() => {
-    return members.filter((m) => m.degree === active)
+    return members
+      .filter((m) => m.degree === active)
+      .sort((a, b) => {
+        const yearA = Number.parseInt(a.grade, 10) || Number.POSITIVE_INFINITY
+        const yearB = Number.parseInt(b.grade, 10) || Number.POSITIVE_INFINITY
+        return yearA - yearB
+      })
   }, [active])
 
   const counts = useMemo(() => {

@@ -305,9 +305,10 @@ export const members = [
     name: '赵子豪',
     degree: 'phd',
     degreeLabel: '博士生',
+    grade: '2026级',
     research: '多尺度/跨尺度病理WSI分析、病理学与放射学交叉研究、AI架构的专家级临床验证管道设计',
-    institution: '浙江大学',
-    institutionCode: 'ZJU',
+    institution: '兰州大学',
+    college: '人工智能学院',
   },
   {
     name: '周益冰',

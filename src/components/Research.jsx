@@ -2,11 +2,12 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import SectionHeader from './SectionHeader.jsx'
 import { publications, awards } from '../data/research.js'
+import { fall2026Awards } from '../data/awards-2026-autumn.js'
 import { withBasePath } from '../utils/paths.js'
 
 const TABS = [
   { id: 'pubs', label: '论文发表', sub: 'Publications' },
-  { id: 'awards', label: '竞赛获奖', sub: 'Awards' },
+  { id: 'awards', label: '获奖荣誉', sub: 'Awards' },
 ]
 
 const CN_FONT_STACK = '"Microsoft YaHei", SimSun, sans-serif'
@@ -99,13 +100,15 @@ function AwardRow({ a, index }) {
       </div>
       <div className="col-span-12 md:col-span-5">
         <h3 className="text-xl font-normal text-ink md:text-2xl">{a.title}</h3>
-        <div className={`mt-2 ${META_CLASS}`}>主办方 · {a.org}</div>
+        <div className={`mt-2 ${META_CLASS}`}>赛事 / 机构 · {a.org}</div>
+        {a.recipient && <div className={`mt-1 ${META_CLASS}`}>获奖方 · {a.recipient}</div>}
+        {a.note && <div className={`mt-1 ${META_CLASS}`}>{a.note}</div>}
       </div>
       <div className={`col-span-6 md:col-span-2 ${META_DARK_CLASS}`}>
-        {a.year}
+        {a.date ? <time dateTime={a.date}>{a.date}</time> : a.year}
       </div>
       <div className="col-span-6 flex items-start justify-end md:col-span-1">
-        <span className="border border-cyan_med px-2.5 py-1 text-[10px] tracking-[0.04em] text-cyan_med">
+        <span className="whitespace-nowrap border border-cyan_med px-2.5 py-1 text-[10px] tracking-[0.04em] text-cyan_med">
           {a.placement}
         </span>
       </div>
@@ -204,7 +207,7 @@ export default function Research() {
               transition={{ duration: 0.3 }}
               className="border-t border-ink"
             >
-              {awards.map((a, i) => (
+              {[...fall2026Awards, ...awards].map((a, i) => (
                 <AwardRow key={a.id} a={a} index={i} />
               ))}
             </motion.ul>

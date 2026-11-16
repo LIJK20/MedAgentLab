@@ -8,6 +8,7 @@ export const fall2026Awards = [
     org: '浙江大学脑机智能全国重点实验室',
     recipient: '付钰',
     note: '2024 年度开放课题评审',
+    certificate: '/Awards/bmi-2024-outstanding-open-project.jpg',
   },
   {
     id: 'mrixfields-2026-task-1',
@@ -17,6 +18,7 @@ export const fall2026Awards = [
     date: '2026-10-01',
     org: 'MICCAI 2026 · MRIxFields Challenge',
     recipient: 'Lzu_LastDance',
+    certificate: '/Awards/mrixfields-2026-task-1.jpg',
   },
   {
     id: 'mrixfields-2026-task-2',
@@ -35,5 +37,6 @@ export const fall2026Awards = [
     date: '2026-10-01',
     org: 'MICCAI 2026 · MRIxFields Challenge',
     recipient: 'Lzu_LastDance',
+    certificate: '/Awards/mrixfields-2026-task-3.jpg',
   },
 ]
